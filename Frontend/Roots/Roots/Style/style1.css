@@ -1,0 +1,156 @@
+body{
+    margin: 0 ;
+    padding: 0;
+}
+
+
+.header{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(93, 93, 97) 0%, rgb(89, 89, 136) 35%, rgb(10, 62, 104) 100%);
+            color: #ffffff;
+            padding: 10px;
+            display: flex;
+    font-size: 20px;
+            justify-content: space-between;
+            align-items: center;
+}
+.header .menu {
+    display: flex;
+}
+
+.header .menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.socialIcons {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+
+.products {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.products .product {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+}
+
+
+.footer2{
+    font-family: 'Ubuntu', sans-serif;
+    background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgb(69, 69, 71) 0%, rgb(69, 69, 71) 35%, rgb(69, 69, 71) 35%);
+            color: #ffffff;
+            padding: 100px;
+            font-size: 15px;
+            position: relative;
+            text-align: left;
+}
+
+.f2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: left;
+}
+
+.f3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    text-align: right; 
+}
+
+
+.logo{
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+
+}
+
+.menu{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+.pc1{
+    font-family: 'Ubuntu', sans-serif;
+}
+.pc2{
+    font-family: 'Ubuntu', sans-serif;
+}
+.pc3{
+    font-family: 'Ubuntu', sans-serif;
+}
+.pc4{
+    font-family: 'Ubuntu', sans-serif;  
+}
+.pc5{
+    font-family: 'Ubuntu', sans-serif;
+}
+.pc6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.search-bar{
+    position: absolute;
+    left: 50%;
+    top: 10%; 
+    transform: translate(-50%,50%);
+    padding: 10px;
+}
+
+input{
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0;
+    padding: 0 20px;
+    color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #000;
+    transition: all .7s ease;
+}
+
+::placeholder{
+    color: grey;
+}
+
+.btn{
+position: absolute;
+right: 0;
+top: 0;
+width: 80px;
+height: 80px;
+background-color: black ;
+line-height: 80px;
+border-radius: 50%;
+text-align: center;
+cursor: pointer;
+transition: .5s;
+}
+
+.btn i{
+font-size: 25px;
+color: white;
+line-height: 80px;
+transition: all .7s ease;
+}
+
+.search-bar:hover input{
+    width: 350px;
+}
+
+.search-bar:hover i {
+    transform: rotate(-360deg);
+}
+
+btn:hover{
+    background: lightgrey;
+}

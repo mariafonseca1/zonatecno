@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="seleccionar"></select>
+</body>
+</html>
+
+<script>
+var url = "https://localhost:44351/api/usuario";
+
+fetch(url, { mode: 'cors' }).then(function(result){
+    if (result.ok){
+        return result.json();
+    }
+}).then(function(data){
+    data.forEach(function(element){
+        let select = document.getElementById("seleccionar");
+        let option = document.createElement("option");
+        option.appendChild(document.createTextNode(element.nombre));
+        option.value = element.id;
+
+        select.appendChild(option);
+    });
+});
+</script>
