@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba CRUD - FACTURA_PRODUCTO</title>
+</head>
+<body>
+    <h1>Prueba CRUD - FACTURA_PRODUCTO</h1>
+
+    <!-- Mostrar todos los registros de FACTURA_PRODUCTO -->
+    <h2>Registros de FACTURA_PRODUCTO:</h2>
+    <ul id="facturaProductoList"></ul>
+
+    <!-- Ver un registro de FACTURA_PRODUCTO por ID -->
+    <h2>Ver registro de FACTURA_PRODUCTO por ID:</h2>
+    <label for="facturaProductoId">ID del registro:</label>
+    <input type="text" id="facturaProductoId" placeholder="ID">
+    <button onclick="getFacturaProductoById()">Ver registro</button>
+    <div id="facturaProductoDetails"></div>
+
+    <!-- Agregar nuevo registro de FACTURA_PRODUCTO -->
+    <h2>Agregar nuevo registro de FACTURA_PRODUCTO:</h2>
+    <label for="idFactura">ID de la factura:</label>
+    <input type="number" id="idFactura" placeholder="ID de la factura">
+    <label for="idProducto">ID del producto:</label>
+    <input type="number" id="idProducto" placeholder="ID del producto">
+    <label for="cantidad">Cantidad:</label>
+    <input type="number" id="cantidad" placeholder="Cantidad">
+    <button onclick="createFacturaProducto()">Agregar registro</button>
+
+    <!-- Modificar registro de FACTURA_PRODUCTO -->
+    <h2>Modificar registro de FACTURA_PRODUCTO:</h2>
+    <label for="facturaProductoIdToUpdate">ID del registro a modificar:</label>
+    <input type="text" id="facturaProductoIdToUpdate" placeholder="ID">
+    <label for="idFacturaToUpdate">Nuevo ID de la factura:</label>
+    <input type="number" id="idFacturaToUpdate" placeholder="Nuevo ID de la factura">
+    <label for="idProductoToUpdate">Nuevo ID del producto:</label>
+    <input type="number" id="idProductoToUpdate" placeholder="Nuevo ID del producto">
+    <label for="cantidadToUpdate">Nueva cantidad:</label>
+    <input type="number" id="cantidadToUpdate" placeholder="Nueva cantidad">
+    <button onclick="updateFacturaProducto()">Modificar registro</button>
+
+    <!-- Eliminar registro de FACTURA_PRODUCTO -->
+    <h2>Eliminar registro de FACTURA_PRODUCTO:</h2>
+    <label for="facturaProductoIdToDelete">ID del registro a eliminar:</label>
+    <input type="text" id="facturaProductoIdToDelete" placeholder="ID">
+    <button onclick="deleteFacturaProducto()">Eliminar registro</button>
+
+    <script src="Script/factura_producto.js"></script>
+</body>
+</html>

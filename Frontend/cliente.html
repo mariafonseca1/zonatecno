@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prueba CRUD - CLIENTE</title>
+</head>
+<body>
+    <h1>Prueba CRUD - CLIENTE</h1>
+
+    <!-- Mostrar todos los clientes -->
+    <h2>Clientes:</h2>
+    <ul id="clientesList"></ul>
+
+    <!-- Ver un cliente por ID -->
+    <h2>Ver cliente por ID:</h2>
+    <label for="clientId">ID del cliente:</label>
+    <input type="text" id="clientId" placeholder="ID">
+    <button onclick="getClienteById()">Ver cliente</button>
+    <div id="clienteDetails"></div>
+
+    <!-- Agregar nuevo cliente -->
+    <h2>Agregar nuevo cliente:</h2>
+    <label for="retira">Retira:</label>
+    <input type="text" id="retira" placeholder="Retira">
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" placeholder="Dirección">
+    <button onclick="createCliente()">Agregar cliente</button>
+
+    <!-- Modificar cliente -->
+    <h2>Modificar cliente:</h2>
+    <label for="clientIdToUpdate">ID del cliente a modificar:</label>
+    <input type="text" id="clientIdToUpdate" placeholder="ID">
+    <label for="retiraToUpdate">Nuevo retira:</label>
+    <input type="text" id="retiraToUpdate" placeholder="Nuevo retira">
+    <label for="direccionToUpdate">Nueva dirección:</label>
+    <input type="text" id="direccionToUpdate" placeholder="Nueva dirección">
+    <button onclick="updateCliente()">Modificar cliente</button>
+
+    <!-- Eliminar cliente -->
+    <h2>Eliminar cliente:</h2>
+    <label for="clientIdToDelete">ID del cliente a eliminar:</label>
+    <input type="text" id="clientIdToDelete" placeholder="ID">
+    <button onclick="deleteCliente()">Eliminar cliente</button>
+
+    <script src="Script/cliente.js"></script>
+</body>
+</html>
